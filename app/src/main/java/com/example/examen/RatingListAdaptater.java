@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.examen.data.RatingContract;
 
-import java.sql.Timestamp;
-
 public class RatingListAdaptater extends RecyclerView.Adapter<RatingListAdaptater.RatingListViewHolder> {
     private Cursor mCursor;
     private Context mContext;

@@ -39,7 +39,7 @@ public class ListActivity extends AppCompatActivity {
                 null,
                 null,
                 null,
-                RatingContract.RatingEntry.COLUMN_DATE_HEURE
+                RatingContract.RatingEntry._ID+" DESC"
         );
     }
 }

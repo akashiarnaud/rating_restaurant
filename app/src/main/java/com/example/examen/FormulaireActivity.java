@@ -68,7 +68,7 @@ public class FormulaireActivity extends AppCompatActivity implements DatePickerD
             @Override
             public void onClick(View v) {
                 String restaurant_name = mRestaurantName.getText().toString();
-                String date_heure = mRestaurantName.getText().toString();
+                String date_heure = mDateHeure.getText().toString();
                 float decoration_rating = mDecorationRating.getRating();
                 float food_rating = mFoodRating.getRating();
                 float service_rating = mServiceRating.getRating();
@@ -76,6 +76,7 @@ public class FormulaireActivity extends AppCompatActivity implements DatePickerD
 
                 /* put here SQLITE INSERT FUNCTION and show popup*/
                 addAdviceRating(restaurant_name,date_heure,decoration_rating,food_rating,service_rating,comments);
+                System.out.println(date_heure);
                 new AlertDialog.Builder(FormulaireActivity.this)
                         .setTitle("Succès")
                         .setMessage("Votre avis a bien été enregistrer")

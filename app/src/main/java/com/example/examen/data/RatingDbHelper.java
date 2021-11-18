@@ -15,7 +15,7 @@ public class RatingDbHelper extends SQLiteOpenHelper {
         final String SQL_CREATE_RATING_SQL = "CREATE TABLE " + RatingContract.RatingEntry.TABLE_NAME + " (" +
                 RatingContract.RatingEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                 RatingContract.RatingEntry.COLUMN_NAME + " TEXT NOT NULL," +
-                RatingContract.RatingEntry.COLUMN_DATE_HEURE + " TIMESTAMP DEFAULT CURRENT_TIMESTAMP," +
+                RatingContract.RatingEntry.COLUMN_DATE_HEURE + " TEXT NOT NULL," +
                 RatingContract.RatingEntry.COLUMN_RATING_DECO + " NUMBER NOT NULL," +
                 RatingContract.RatingEntry.COLUMN_RATING_FOOD + " NUMBER NOT NULL," +
                 RatingContract.RatingEntry.COLUMN_RATING_SERVICE + " NUMBER NOT NULL," +
